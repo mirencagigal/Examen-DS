@@ -8,3 +8,12 @@ colnames(muestra12)
 
 names(muestra12) <- c("nif", "nombre", "genero")
 names(muestra12)
+
+#regexp <- "([[:digit:]]{8}) ([[:alpha:]]{1})"
+#grepl(pattern = regexp, x = muestra12$nif)
+
+
+regexp <- "([[:digit:]]{8}) ([[:alpha:]]{1})"
+grepl(pattern = regexp, x = muestra12$nif)
+
+
